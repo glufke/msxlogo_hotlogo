@@ -1,0 +1,175 @@
+Func / Command	TYPE	HOT LOGO				MSX LOGO		BASIC EQUIVALENT	OBS
+		Full Command	Abbrev	Arguments	Return	Full Command	Abrev		
+FUNCTION	BOOLEAN	algum		PRED1 PRED2	PRED				
+COMMAND	GRAPHIC	apaguedesenho	ad			cg		SCREEN 2	
+COMMAND	TEXT	apaguetexto	att					CLS	
+COMMAND	TURTLE	apareçatat	at			st			
+COMMAND	PROG	aprenda	ap			to		10 ..... 	
+FUNCTION	MATH	arctan		NUMERO	-90 TO 90	arctan		ATN	
+COMMAND	FILE	arquivos				dir		FILES	
+FUNCTION	MATH	arredonde		NUMERO	NUMERO	round			
+FUNCTION	TEXT	ascii		CARACTER	NUMERO	ascii		ASC	
+COMMAND	TURTLE	atençãotat	atat	NUMEROTARTARUGA | LISTANUMEROTARTARUGA		tell			
+COMMAND	VARIABLE	atribua	atr	NOME OBJETO				LET	
+COMMAND	SCREEN	aumentelimite	al						tirelimite
+COMMAND	TURTLE	cada		LISTAINSTRUÇÕES		each			
+FUNCTION	TEXT	caractere	car	NUMERO	CARACTER	char		CHR$	
+FUNCTION	INPUT	car.entrada	care		CARACTER	rc		INPUT$	
+COMMAND	SPRITE	carimbe				stamp			
+COMMAND	SPRITE	carimbetudo				shade		PAINT	
+COMMAND	FILE	carregue		NOMEARQUIVO		load		LOAD	
+COMMAND	FILE	carreguec		NOMEARQUIVO		cload		CLOAD	
+COMMAND	FILE	carreguedes		NOMEARQUIVO		loadpic		BLOAD ... , S	
+COMMAND	VARIABLE	coloque	col	OBJETO NOME					See atribua
+COMMAND	VARIABLE	coloqueprop		NOME OBJETO					
+COMMAND	PRINTER	comimpressora				printer		LPRINT ?	
+COMMAND	TURTLE	congele				freeze			See descongele, mudevel
+FUNCTION	TEXT	conteúdo		NOME	...				
+FUNCTION	TURTLE	coorx			NUMBER	xcor			
+FUNCTION	TURTLE	coory			NUMBER	ycor			
+COMMAND	SPRITE	copiafig		NUMEROFIGURA NUMERONOVAFIGURA		copysh			
+COMMAND	PROG	copie		NOME NOVONOME					
+FUNCTION	TURTLE	cordebaixo	cb		NUMBER	color.over	colour.over		
+FUNCTION	GRAPHIC	cordefundo	cf		NUMBER	bg			
+FUNCTION	TURTLE	cordolápis	cl		NUMBER				
+FUNCTION	TURTLE	cortat			NUMBER	color	colour		
+FUNCTION	MATH	cos		NUMERO	NUMERO	cos		COS	
+COMMAND	SPRITE	criafigl		NUMEROFIGURA FIGURALISTA					
+FUNCTION	TEXT	cursor			[X Y]	cursor			
+COMMAND	PROG	defina		NOME LISTA		define			
+COMMAND	TURTLE	desapareçatat	dt			ht			
+COMMAND	TURTLE	descongele				thaw			
+FUNCTION	MATH	diferença		NUMERO1 NUMERO2	NUMERO	diff		NUM1 - NUM2	
+FUNCTION	TURTLE	direção	dç		NUMBER				
+FUNCTION	TURTLE	direçãopara		[X Y]	NUMBER				
+FUNCTION	TURTLE	distâncias		[X Y]	NUMBER	distance			
+FUNCTION	BOOLEAN	e		PRED1 PRED2	verd / falso	and			
+COMMAND	SPRITE	edfig		NUMEROFIGURA		es			
+COMMAND	PROG	edite	ed	NOME | LISTANOMES		edit	ed		
+COMMAND	PROG	edns							
+FUNCTION	TEXT	elemento		NUMERO OBJETO	STRING | NUMBER			INSTR	
+COMMAND	PROG	elimine	el	NOME | LISTANOMES		erase			
+COMMAND	FILE	eliminearq		NOMEARQUIVO		erf		MSXDOS: DEL	
+COMMAND	PROG	eln		NOME | LISTA					
+COMMAND	PROG	elns							
+COMMAND	PROG	elps							
+COMMAND	PROG	eltudo				erall		NEW	
+COMMAND	INTERRUPT	em.colisão		TARTARUGA1 TARTARUGA2 LISTAINSTRUÇÕES		on.touch		ON SPRITE GOSUB	
+COMMAND	PROG	envie		OBJETO					
+COMMAND	SCREEN	escreva	esc	OBJETO		print		PRINT	
+COMMAND		espere		NUMERO		wait			
+RES WORD	BOOLEAN	falso				false			
+COMMAND	PROG	faça		LISTA					
+FUNCTION	TURTLE	fig			NUMBER	shape			
+COMMAND		fim				end		END	
+COMMAND	FILE	gravedes		NOMEARQUIVO		savepic		BSAVE ... , S	
+COMMAND	FILE	gravetudo		NOMEARQUIVO		save		SAVE	
+COMMAND	FILE	gravetudoc		NOMEARQUIVO		csave		CSAVE	
+FUNCTION	MATH	int		NUMERO	NUMERO	int		INT	
+COMMAND	SPRITE	inverta							
+FUNCTION	INPUT	joy		JOYSTICKNUMERO	NUMBER 1-8	joy			
+COMMAND		juntenofim	jf	OBJETO LISTA					
+COMMAND		juntenoinício	ji	OBJETO LISTA					
+COMMAND		liberemem						CLEAR?	
+COMMAND	INPUT	lin.entrada	line			rl		INPUT	
+		lista		OBJETO1 OBJETO2		list			
+FUNCTION	SPRITE	listafig		NUMEROFIGURA	LISTA	getsh			
+FUNCTION		memlivre			NUMBER			FRE(0)	
+COMMAND	PROG	mons							
+COMMAND	PROG	moobs							See em.colisão
+COMMAND	PROG	mop		NOME LISTANOMES				LIST	
+COMMAND	PROG	moprop							
+COMMAND	PROG	mops				pops			
+COMMAND	PROG	mostra	mo	OBJETO				PRINT	
+COMMAND	FILE	mostrearq		NOMEARQUIVO		pofile		MSXDOS: TYPE	
+COMMAND	PROG	mots				pots		LIST	
+COMMAND	PROG	motudo				poall		LIST	
+COMMAND	SCREEN	mudecf		CORNUMERO		setbg			
+COMMAND	TURTLE	mudecl		CORNUMERO		setpc			
+COMMAND	SCREEN	mudecor		CORNUMERO		change.color	change.colour		
+COMMAND	TURTLE	mudect		CORNUMERO		setc			
+COMMAND	TEXT	mudecursor		[COLUNA LINHA]		setcursor		LOCATE	
+COMMAND	TURTLE	mudedç		NUMERO					
+COMMAND	SPRITE	mudefig		NUMEROFIGURA		setsh			
+COMMAND	TURTLE	mudepos		[X Y]		setpos			
+COMMAND	GRAPHIC	mudeproporção		NUMERO					
+COMMAND	TEXT	mudeteto		LINHA		settext			
+COMMAND	TURTLE	mudevel		NUMERO		setsp			
+COMMAND	TURTLE	mudevelx		NUMERO		setxvel			
+COMMAND	TURTLE	mudevely		NUMERO		setyvel			
+COMMAND	TURTLE	mudex		X		setx			
+COMMAND	TURTLE	mudey		Y		sety			
+FUNCTION		num.elem		OBJETO	NUMBER				
+COMMAND	PROG	nívelinicial						RESET ?	
+FUNCTION	BOOLEAN	não		PRED	verd | falso	not			
+FUNCTION		palavra	pal	PALAVRA1 PALAVRA2		word		$STR1 + $STR2	
+COMMAND	TURTLE	paracentro	pc						
+COMMAND	TURTLE	paracentroa	pca						
+COMMAND	TURTLE	paradireita	pd	NUMERO		right	rt		
+COMMAND	TURTLE	paraesquerda	pe	NUMERO		left	lt		
+COMMAND	TURTLE	parafrente	pf	NUMERO		forward	fd		
+COMMAND	TURTLE	paratrás	pt	NUMERO		back	bk		
+COMMAND	PROG	pare				stop		END	
+COMMAND	GRAPHIC	pinte				fill		PAINT	
+COMMAND	INPUT?	ponha		OBJETO					
+COMMAND	SCREEN	ponhaponto	pp	[X Y]		dot		PSET	
+FUNCTION	TURTLE	posição	pos		[X Y]	pos			
+FUNCTION		primeiro	pri	OBJETO		first			
+COMMAND	PROG	primitivas				primitives			
+FUNCTION	MATH	produto		NUMERO1 NUMER2	NUMERO	product		NUM1 * NUM2	
+FUNCTION	TURTLE	proporção			NUMBER				
+FUNCTION	VARIABLE	propriedade	prop	NOME PROP					
+COMMAND	INTERRUPT	quando		OCORRENCIANUMERO LISTAINSTRUCOES		when		ON INTERVAL GOSUB	
+FUNCTION	TURTLE	quem			LIST	who			
+FUNCTION	MATH	quociente		NUMER1 NUMER2	NUMERO	quotient		NUM1 / NUM2	
+FUNCTION	MATH	raiz	rq	NUMERO	NUMERO	sqrt		SQR	
+COMMAND	FLOW	repita		NUMERO LISTAINSTRUCOES		repeat		FOR X=1 TO ....	
+FUNCTION		reproduza			LIST				
+FUNCTION	MATH	resto		NUMERO1 NUMER2	NUMERO			MOD	
+		retireprop		NOME PROP					
+		retiretodasprop							
+		rg				rg			
+		sãoiguais		OBJETO1 OBJETO2		equalp		 =	
+FUNCTION	FLOW	se		PRED LISTA1 LISTA2		if			
+COMMAND	PRINTER	semimpressora				noprinter			
+		semprimeiro	sp	OBJETO		butfirst	bf		
+		semúltimo	su	OBJETO		butlast	bl		
+FUNCTION	MATH	sen		NUMERO	NUMERO	sin		SIN	
+		sentença	sn	OBJETO1 OBJETO2		sentence			
+COMMAND	SOUND	som		TOM VOLUME TEMPO		noise			
+FUNCTION	MATH	soma		NUMERO1 NUMERO2	NUMERO	sum		NUM1 + NUM2	
+FUNCTION	MATH	sorteieaté		NUMERO	NUMERO	random		RND	
+	TURTLE	sótat		TARTARUGANUMERO LISTA | LISTANUMEROTARTARUGA LISTA 					
+	TURTLE	tartaruga	tat						
+		temcar				keyp			
+		temvalor		NOME					
+		texto		NOME		text			
+COMMAND	SCREEN	tirelimite	tl						aumentelimite
+FUNCTION	TURTLE	todas							
+		todasprop		NOME					
+COMMAND	SOUND	toque		CANAL FREQUENCIA VOLUME TEMPO		toot			
+FUNCTION	MATH	troquesinal		NUMERO | NOME	NUMERO	minus		NUM * -1	
+COMMAND	GRAPHIC	useborracha	ub						
+COMMAND	GRAPHIC	useinversor	ui						
+COMMAND	GRAPHIC	uselápis	ul			pendown			
+COMMAND	GRAPHIC	usenada	un			penup			
+FUNCTION		vel				speed			
+FUNCTION		velx				xvel			
+FUNCTION		vely				yvel			
+	BOOLEAN	verd				true			
+COMMAND		versão				version			
+		último	ult	OBJETO		last			
+FUNCTION	INPUT	ébotão		JOYSTICKNUMERO		buttonp			
+FUNCTION	INPUT	éjoy		JOYSTICKNUMERO		joyp			
+FUNCTION		élista		OBJETO		listp			
+FUNCTION		énumero		OBJETO		numberp			
+FUNCTION		épalavra		OBJETO		wordp			
+FUNCTION		éprimitiva		OBJETO		primitivep			
+FUNCTION		éprocedimento		NOME					
+FUNCTION		évazia		OBJETO		emptyp			
+FUNCTION		évisível							
+FUNCTION	MEMORY	.entra		PORTA	NUMERO	.in		IN	
+COMMAND	MEMORY	.sai		PORTA DEC		.out		OUT	
+COMMAND	MEMORY	.chame		ENDERECO		.call		DEFUSR1 ... ? USR1..	
+COMMAND	MEMORY	.deposite		ENDERECO DEC		.deposit		POKE	
+FUNCTION	MEMORY	.examine		ENDERECO	NUMERO	.examine		PEEK	
